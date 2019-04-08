@@ -318,6 +318,17 @@ class PhpWord
     }
 
     /**
+     * Set default title style definition to styles.xml
+     *
+     * @param array $styles Title style definition
+     * @return \PhpOffice\PhpWord\Style\Paragraph
+     */
+    public function setDefaultTitleStyle($styles, $depth)
+    {
+        return Style::setDefaultTitleStyle($depth, $styles);
+    }
+
+    /**
      * Load template by filename
      *
      * @deprecated 0.12.0 Use `new TemplateProcessor($documentTemplate)` instead.
