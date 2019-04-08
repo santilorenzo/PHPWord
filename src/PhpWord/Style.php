@@ -167,7 +167,7 @@ class Style
             6 => array('size' => 12, 'color' => '1F4D78'),
         );
 
-        return self::addTitleStyle($depth, empty($styles) ? $titleFontStyles[$depth], $styles);
+        return self::addTitleStyle($depth, empty($styles) ? $titleFontStyles[$depth] : $styles);
     }
 
     /**
